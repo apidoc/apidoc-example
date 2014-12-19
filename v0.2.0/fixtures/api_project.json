@@ -21,9 +21,9 @@
   ],
   "apidoc": "0.2.0",
   "generator": {
-    "version": "0.10.1",
-    "time": "2014-12-19T09:02:23.386Z",
     "name": "apidoc",
-    "url": "http://apidocjs.com"
+    "time": "2014-12-19T13:54:22.551Z",
+    "url": "http://apidocjs.com",
+    "version": "0.10.2"
   }
 }
