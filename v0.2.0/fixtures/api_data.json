@@ -657,6 +657,44 @@
   },
   {
     "type": "get",
+    "url": "/language/clojure",
+    "title": "Clojure",
+    "name": "GetLanguageClojure",
+    "group": "Language",
+    "version": "0.4.0",
+    "description": "<p>Test for Clojure Comment-Syntax.</p> ",
+    "filename": "src/language.clj",
+    "groupTitle": "Language",
+    "sampleRequest": [
+      {
+        "url": "https://api.github.com/v1/language/clojure"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/language/clojure/indented1",
+    "title": "Clojure indented 1",
+    "name": "GetLanguageClojureIndented1",
+    "group": "Language",
+    "version": "0.4.0",
+    "examples": [
+      {
+        "title": "Test for indented comment.",
+        "content": "This is example line 2.\nThis is example line 3.\n\t\t  Line 4 indented (with tab at beginning).\n\t  Line 5 indented.\nThis is example line 6.",
+        "type": "json"
+      }
+    ],
+    "filename": "src/language.clj",
+    "groupTitle": "Language",
+    "sampleRequest": [
+      {
+        "url": "https://api.github.com/v1/language/clojure/indented1"
+      }
+    ]
+  },
+  {
+    "type": "get",
     "url": "/language/coffeescript",
     "title": "CoffeeScript",
     "name": "GetLanguageCoffeeScript",
