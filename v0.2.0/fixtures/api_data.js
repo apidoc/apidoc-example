@@ -135,7 +135,7 @@ define({ "api": [
     "examples": [
       {
         "title": "Example usage:",
-        "content": "    curl -i http://localhost/escape/text\n    <b>curl -i http://localhost/escape/html</b>\n    <xml>curl -i http://localhost/escape/xml</xml>",
+        "content": "curl -i http://localhost/escape/text\n<b>curl -i http://localhost/escape/html</b>\n<xml>curl -i http://localhost/escape/xml</xml>",
         "type": "json"
       }
     ],
@@ -167,7 +167,7 @@ define({ "api": [
     "examples": [
       {
         "title": "Example usage:",
-        "content": "    curl -i http://localhost/escape/text-old\n    <b>curl -i http://localhost/escape/html-old</b>\n    <xml>curl -i http://localhost/escape/xml-old</xml>",
+        "content": "curl -i http://localhost/escape/text-old\n<b>curl -i http://localhost/escape/html-old</b>\n<xml>curl -i http://localhost/escape/xml-old</xml>",
         "type": "json"
       }
     ],
@@ -568,7 +568,7 @@ define({ "api": [
       "examples": [
         {
           "title": "An example:",
-          "content": "    curl -i http://localhost/header/example/",
+          "content": "curl -i http://localhost/header/example/",
           "type": "json"
         }
       ]
@@ -779,7 +779,7 @@ define({ "api": [
     "examples": [
       {
         "title": "Test for indented comment.",
-        "content": "\tThis is example line 2.\n\tThis is example line 3.\n\t\t    Line 4 indented (with tab at beginning).\n\t    Line 5 indented.\n\tThis is example line 6.",
+        "content": "This is example line 2.\nThis is example line 3.\n\t    Line 4 indented (with tab at beginning).\n    Line 5 indented.\nThis is example line 6.",
         "type": "json"
       }
     ],
@@ -1500,7 +1500,7 @@ define({ "api": [
     "examples": [
       {
         "title": "A common example:",
-        "content": "    curl -i http://localhost/param/example/",
+        "content": "curl -i http://localhost/param/example/",
         "type": "json"
       }
     ],
@@ -1519,7 +1519,7 @@ define({ "api": [
       "examples": [
         {
           "title": "A JSON example:",
-          "content": "    {\n      \"name\": \"John Doe\"\n    }",
+          "content": "{\n  \"name\": \"John Doe\"\n}",
           "type": "json"
         }
       ]
@@ -1580,6 +1580,11 @@ define({ "api": [
         "name": "permission_admin",
         "title": "Admin access.",
         "description": ""
+      },
+      {
+        "name": "permission_user",
+        "title": "User access.",
+        "description": ""
       }
     ],
     "filename": "src/permission.js",
@@ -1602,11 +1607,6 @@ define({ "api": [
       {
         "name": "permission_admin",
         "title": "Admin access.",
-        "description": ""
-      },
-      {
-        "name": "permission_user",
-        "title": "User access.",
         "description": ""
       }
     ],
@@ -1782,6 +1782,86 @@ define({ "api": [
     "sampleRequest": [
       {
         "url": "https://api.github.com/v1/test/success"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/indent/trim/multi/spaces",
+    "title": "Trim multi line (spaces)",
+    "group": "indent",
+    "description": "<p>Text line 1 (Begin: 4xSpaces (3 removed)).    Text line 2 (Begin: 3xSpaces (3 removed), End: 2xSpaces).</p> ",
+    "version": "0.0.0",
+    "filename": "src/indent.js",
+    "groupTitle": "Indent",
+    "name": "GetIndentTrimMultiSpaces",
+    "sampleRequest": [
+      {
+        "url": "https://api.github.com/v1/indent/trim/multi/spaces"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/indent/trim/multi/tabs",
+    "title": "Trim multi line (tabs)",
+    "group": "indent",
+    "description": "<p>Text line 1 (Begin: 3xTab (2 removed)).         Text line 2 (Begin: 2x Tab (2 removed), End: 1xTab).</p> ",
+    "version": "0.0.0",
+    "filename": "src/indent.js",
+    "groupTitle": "Indent",
+    "name": "GetIndentTrimMultiTabs",
+    "sampleRequest": [
+      {
+        "url": "https://api.github.com/v1/indent/trim/multi/tabs"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/indent/trim/multi/tabs/and/space",
+    "title": "Trim multi line (tabs and space)",
+    "group": "indent",
+    "description": "<p>Text line 1 (Begin: 1xTab, 2xSpaces).    Text line 2 (Begin: 3xSpaces, End: 1xTab).</p> ",
+    "version": "0.0.0",
+    "filename": "src/indent.js",
+    "groupTitle": "Indent",
+    "name": "GetIndentTrimMultiTabsAndSpace",
+    "sampleRequest": [
+      {
+        "url": "https://api.github.com/v1/indent/trim/multi/tabs/and/space"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/indent/trim/single",
+    "title": "Trim single line",
+    "group": "indent",
+    "description": "<p>Text line 1 (Begin: 3xSpaces (3 removed), End: 1xSpace).</p> ",
+    "version": "0.0.0",
+    "filename": "src/indent.js",
+    "groupTitle": "Indent",
+    "name": "GetIndentTrimSingle",
+    "sampleRequest": [
+      {
+        "url": "https://api.github.com/v1/indent/trim/single"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/indent/word",
+    "title": "Indent a word",
+    "group": "indent",
+    "description": "<p>text.</p> ",
+    "version": "0.0.0",
+    "filename": "src/indent.js",
+    "groupTitle": "Indent",
+    "name": "GetIndentWord",
+    "sampleRequest": [
+      {
+        "url": "https://api.github.com/v1/indent/word"
       }
     ]
   }
