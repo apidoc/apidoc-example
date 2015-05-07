@@ -6,11 +6,11 @@
   "sampleUrl": "https://api.github.com/v1",
   "header": {
     "title": "My own header title",
-    "content": "# Header .md File\n\nContent of header.md file.\n"
+    "content": "<h1>Header .md File</h1>\n<p>Content of header.md file.</p>\n"
   },
   "footer": {
     "title": "My own footer title",
-    "content": "# Footer .md File\n\nContent of footer.md file.\n"
+    "content": "<h1>Footer .md File</h1>\n<p>Content of footer.md file.</p>\n"
   },
   "order": [
     "Error",
@@ -22,7 +22,7 @@
   "apidoc": "0.2.0",
   "generator": {
     "name": "apidoc",
-    "time": "2015-05-07T12:15:54.099Z",
+    "time": "2015-05-07T12:31:03.151Z",
     "url": "http://apidocjs.com",
     "version": "0.12.3"
   }
