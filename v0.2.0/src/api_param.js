@@ -69,3 +69,27 @@
  * @apiParam {String} [param15="Default Value"] Optional Parameter with type, description and default value.
  * @apiParam {String} [param16="Default Value"]
  */
+
+/**
+ * @api {get} /param/:id Errors
+ * @apiName GetError
+ * @apiGroup Param
+ * @apiVersion 0.1.0
+ * @apiDescription Returned error parameters.
+ * Syntax is the same as for @apiParam
+ *
+ * @apiError error1Error This is Error 1.
+ * @apiError error2Error This is Error 2.
+ */
+
+/**
+ * @api {get} /param/:id Success
+ * @apiName GetSuccess
+ * @apiGroup Param
+ * @apiVersion 0.1.0
+ * @apiDescription Returned success parameters.
+ * Syntax is the same as for @apiParam
+ *
+ * @apiError success1 This is Success 1.
+ * @apiError success2 This is Success 2.
+ */

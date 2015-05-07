@@ -1,6 +1,6 @@
 define({
   "name": "test",
-  "version": "0.5.0",
+  "version": "0.13.0",
   "description": "RESTful web API Documentation Generator",
   "url": "https://api.github.com/v1",
   "sampleUrl": "https://api.github.com/v1",
@@ -17,12 +17,13 @@ define({
     "Define",
     "PostTitleAndError",
     "NotExistingEntry",
-    "PostError"
+    "PostError",
+    "GetParam"
   ],
   "apidoc": "0.2.0",
   "generator": {
     "name": "apidoc",
-    "time": "2015-05-07T12:31:03.151Z",
+    "time": "2015-05-07T13:34:35.814Z",
     "url": "http://apidocjs.com",
     "version": "0.12.3"
   }

@@ -1,9 +1,10 @@
 /**
- * @apiDefinePermission permission_admin Admin access.
+ * @apiDefine permission_admin Admin access.
+ * Some description.
  */
 
 /**
- * @apiDefinePermission permission_user User access.
+ * @apiDefine permission_user User access.
  */
 
 /**

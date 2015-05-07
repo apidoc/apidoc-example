@@ -31,96 +31,11 @@ define({ "api": [
         ]
       }
     },
-    "filename": "src/define.js",
+    "filename": "src/api_define.js",
     "groupTitle": "Define",
     "sampleRequest": [
       {
         "url": "https://api.github.com/v1/define"
-      }
-    ]
-  },
-  {
-    "type": "post",
-    "url": "/test/error",
-    "title": "Multiple Error Structures",
-    "name": "PostError",
-    "group": "Error",
-    "version": "0.1.0",
-    "description": "<p>Use of multiple ErrorStructures.</p> ",
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "error3Error",
-            "description": "<p>This is Error 3 (local).</p> "
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "error1Error",
-            "description": "<p>This is Error 1.</p> "
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "error2Error",
-            "description": "<p>This is Error 2.</p> "
-          }
-        ]
-      }
-    },
-    "filename": "src/error_structure.js",
-    "groupTitle": "Error",
-    "sampleRequest": [
-      {
-        "url": "https://api.github.com/v1/test/error"
-      }
-    ]
-  },
-  {
-    "type": "post",
-    "url": "/test/title_and_error",
-    "title": "Title and Structure",
-    "name": "PostTitleAndError",
-    "group": "Error",
-    "version": "0.1.0",
-    "description": "<p>Use of Title and Structures in the same block.</p> ",
-    "success": {
-      "fields": {
-        "204 No Content. Added to global namespace.": [
-          {
-            "group": "204",
-            "optional": false,
-            "field": "message",
-            "description": "<p>Successfully deleted.</p> "
-          }
-        ]
-      }
-    },
-    "error": {
-      "fields": {
-        "Error 4xx": [
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "error3Error",
-            "description": "<p>This is Error 3 (local).</p> "
-          },
-          {
-            "group": "Error 4xx",
-            "optional": false,
-            "field": "error1Error",
-            "description": "<p>This is Error 1.</p> "
-          }
-        ]
-      }
-    },
-    "groupTitle": "Error",
-    "sampleRequest": [
-      {
-        "url": "https://api.github.com/v1/test/title_and_error"
       }
     ]
   },
@@ -236,7 +151,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "src/example.js",
+    "filename": "src/api_example.js",
     "groupTitle": "Example",
     "sampleRequest": [
       {
@@ -292,7 +207,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "src/example.js",
+    "filename": "src/api_example.js",
     "groupTitle": "Example",
     "sampleRequest": [
       {
@@ -306,10 +221,10 @@ define({ "api": [
     "title": "Group and Description",
     "name": "GetGroup",
     "group": "Group",
-    "groupDescription": "<p>This is a Group Description. Markdown capable.</p> ",
     "version": "0.5.0",
-    "filename": "src/group.js",
-    "groupTitle": "Group",
+    "filename": "src/api_group.js",
+    "groupTitle": "Group Title",
+    "groupDescription": "<p>This is a Group Description. It is <strong>Markdown</strong> capable.</p> ",
     "sampleRequest": [
       {
         "url": "https://api.github.com/v1/group/:id"
@@ -335,7 +250,7 @@ define({ "api": [
             "description": "<p>No Group, automatically set Group to &quot;Parameter&quot;</p> "
           }
         ],
-        "Replace \"login\" with this text": [
+        "Replace \"login\" with this text.": [
           {
             "group": "login",
             "type": "String",
@@ -392,7 +307,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "error2",
-            "description": "<p>Group &quot;400&quot;</p> "
+            "description": "<p>Undefined Group &quot;400&quot;</p> "
           }
         ],
         "401 - Oh oh, replace \"401\" with this text": [
@@ -415,6 +330,7 @@ define({ "api": [
         ]
       }
     },
+    "filename": "src/parameter_grouping.js",
     "groupTitle": "Grouping",
     "sampleRequest": [
       {
@@ -548,7 +464,7 @@ define({ "api": [
         ]
       }
     },
-    "filename": "src/header.js",
+    "filename": "src/api_header.js",
     "groupTitle": "Header",
     "sampleRequest": [
       {
@@ -573,85 +489,11 @@ define({ "api": [
         }
       ]
     },
-    "filename": "src/header_example.js",
+    "filename": "src/api_header_example.js",
     "groupTitle": "Header",
     "sampleRequest": [
       {
         "url": "https://api.github.com/v1/header/example/"
-      }
-    ]
-  },
-  {
-    "type": "get",
-    "url": "/header/title/",
-    "title": "Header Title",
-    "name": "GetHeaderTitle",
-    "group": "Header",
-    "version": "0.5.0",
-    "description": "<p>Usage of @apiHeaderTitle.</p> ",
-    "header": {
-      "fields": {
-        "This are the Parameters for MyGroup:": [
-          {
-            "group": "MyHeaderGroup",
-            "optional": false,
-            "field": "authorization",
-            "description": "<p>The authorization code.</p> "
-          },
-          {
-            "group": "MyHeaderGroup",
-            "type": "string",
-            "optional": false,
-            "field": "text",
-            "description": "<p>Some text.</p> "
-          }
-        ]
-      }
-    },
-    "groupTitle": "Header",
-    "sampleRequest": [
-      {
-        "url": "https://api.github.com/v1/header/title/"
-      }
-    ]
-  },
-  {
-    "type": "post",
-    "url": "/test/header",
-    "title": "Header Structure",
-    "name": "PostHeader",
-    "group": "Header",
-    "version": "0.5.0",
-    "description": "<p>Use of multiple HeaderStructures.</p> ",
-    "header": {
-      "fields": {
-        "Header": [
-          {
-            "group": "Header",
-            "optional": false,
-            "field": "Header3",
-            "description": "<p>This is Header 3 (local).</p> "
-          },
-          {
-            "group": "Header",
-            "optional": false,
-            "field": "Header1",
-            "description": "<p>This is Header 1.</p> "
-          },
-          {
-            "group": "Header",
-            "optional": false,
-            "field": "header2",
-            "description": "<p>This is Header 2.</p> "
-          }
-        ]
-      }
-    },
-    "filename": "src/header_structure.js",
-    "groupTitle": "Header",
-    "sampleRequest": [
-      {
-        "url": "https://api.github.com/v1/test/header"
       }
     ]
   },
@@ -1107,6 +949,40 @@ define({ "api": [
   {
     "type": "get",
     "url": "/param/:id",
+    "title": "Errors",
+    "name": "GetError",
+    "group": "Param",
+    "version": "0.1.0",
+    "description": "<p>Returned error parameters. Syntax is the same as for @apiParam</p> ",
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "error1Error",
+            "description": "<p>This is Error 1.</p> "
+          },
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "error2Error",
+            "description": "<p>This is Error 2.</p> "
+          }
+        ]
+      }
+    },
+    "filename": "src/api_param.js",
+    "groupTitle": "Param",
+    "sampleRequest": [
+      {
+        "url": "https://api.github.com/v1/param/:id"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/param/:id",
     "title": "Parameters",
     "name": "GetParam",
     "group": "Param",
@@ -1340,7 +1216,7 @@ define({ "api": [
         ]
       }
     },
-    "filename": "src/param.js",
+    "filename": "src/api_param.js",
     "groupTitle": "Param",
     "sampleRequest": [
       {
@@ -1481,7 +1357,7 @@ define({ "api": [
         ]
       }
     },
-    "filename": "src/param.js",
+    "filename": "src/api_param.js",
     "groupTitle": "Param",
     "sampleRequest": [
       {
@@ -1524,7 +1400,7 @@ define({ "api": [
         }
       ]
     },
-    "filename": "src/param_example.js",
+    "filename": "src/api_param_example.js",
     "groupTitle": "Param",
     "sampleRequest": [
       {
@@ -1534,242 +1410,23 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/param/title/",
-    "title": "Param Title",
-    "name": "GetParamTitle",
+    "url": "/param/:id",
+    "title": "Success",
+    "name": "GetSuccess",
     "group": "Param",
-    "version": "0.8.0",
-    "description": "<p>Usage of @apiParamTitle.</p> ",
-    "parameter": {
-      "fields": {
-        "Parameters only for admin users:": [
-          {
-            "group": "ParamTitleGroupname",
-            "type": "String",
-            "optional": false,
-            "field": "newPassword",
-            "description": "<p>New password.</p> "
-          },
-          {
-            "group": "ParamTitleGroupname",
-            "type": "String",
-            "optional": false,
-            "field": "userId",
-            "description": "<p>Change password of that user.</p> "
-          }
-        ]
-      }
-    },
-    "groupTitle": "Param",
-    "sampleRequest": [
-      {
-        "url": "https://api.github.com/v1/param/title/"
-      }
-    ]
-  },
-  {
-    "type": "get",
-    "url": "/permission/",
-    "title": "Permission",
-    "name": "GetPermission",
-    "group": "Permission",
-    "version": "0.8.0",
-    "description": "<p>@apiPermission test.</p> ",
-    "permission": [
-      {
-        "name": "permission_admin",
-        "title": "Admin access.",
-        "description": ""
-      },
-      {
-        "name": "permission_user",
-        "title": "User access.",
-        "description": ""
-      }
-    ],
-    "filename": "src/permission.js",
-    "groupTitle": "Permission",
-    "sampleRequest": [
-      {
-        "url": "https://api.github.com/v1/permission/"
-      }
-    ]
-  },
-  {
-    "type": "get",
-    "url": "/permission/",
-    "title": "Permission",
-    "name": "GetPermission",
-    "group": "Permission",
-    "version": "0.8.0",
-    "description": "<p>@apiPermission test.</p> ",
-    "permission": [
-      {
-        "name": "permission_admin",
-        "title": "Admin access.",
-        "description": ""
-      }
-    ],
-    "filename": "src/permission.js",
-    "groupTitle": "Permission",
-    "sampleRequest": [
-      {
-        "url": "https://api.github.com/v1/permission/"
-      }
-    ]
-  },
-  {
-    "type": "get",
-    "url": "/sample/request/",
-    "title": "Sampe Request",
-    "name": "GetSampleRequest",
-    "group": "Sample",
-    "version": "0.8.0",
-    "description": "<p>Usage of many @apiHeaderTitle with different parameters.</p> ",
-    "header": {
-      "fields": {
-        "This are the Header for Group 1:": [
-          {
-            "group": "HeaderGroup1",
-            "type": "string",
-            "optional": false,
-            "field": "authorization",
-            "description": "<p>The authorization code.</p> "
-          },
-          {
-            "group": "HeaderGroup1",
-            "type": "string",
-            "optional": false,
-            "field": "secrect",
-            "description": "<p>Additional secret.</p> "
-          }
-        ],
-        "This are the Header for Group 2:": [
-          {
-            "group": "HeaderGroup2",
-            "type": "string",
-            "optional": false,
-            "field": "authorization",
-            "description": "<p>The authorization code.</p> "
-          },
-          {
-            "group": "HeaderGroup2",
-            "type": "string",
-            "optional": false,
-            "field": "secrect",
-            "description": "<p>Additional secret.</p> "
-          },
-          {
-            "group": "HeaderGroup2",
-            "type": "string",
-            "optional": false,
-            "field": "type",
-            "description": "<p>Content-Type.</p> "
-          }
-        ]
-      }
-    },
-    "parameter": {
-      "fields": {
-        "This are Parameter for Group 1:": [
-          {
-            "group": "ParameterGroup1",
-            "type": "String",
-            "optional": false,
-            "field": "name",
-            "description": "<p>Your name.</p> "
-          }
-        ],
-        "This are Parameter for Group 2:": [
-          {
-            "group": "ParameterGroup2",
-            "type": "string",
-            "optional": false,
-            "field": "firstname",
-            "description": "<p>Your firstname.</p> "
-          },
-          {
-            "group": "ParameterGroup2",
-            "type": "string",
-            "optional": false,
-            "field": "lastname",
-            "description": "<p>Some lastname.</p> "
-          }
-        ]
-      }
-    },
-    "groupTitle": "Sample",
-    "sampleRequest": [
-      {
-        "url": "https://api.github.com/v1/sample/request/"
-      }
-    ]
-  },
-  {
-    "type": "post",
-    "url": "/test/structure",
-    "title": "Multiple Structures",
-    "name": "PostStructure",
-    "group": "Structure",
     "version": "0.1.0",
-    "description": "<p>Use of multiple Structures.</p> ",
-    "parameter": {
+    "description": "<p>Returned success parameters. Syntax is the same as for @apiParam</p> ",
+    "error": {
       "fields": {
-        "Parameter": [
+        "Error 4xx": [
           {
-            "group": "Parameter",
-            "optional": false,
-            "field": "field3",
-            "description": "<p>This is Field 3 (local).</p> "
-          },
-          {
-            "group": "Parameter",
-            "optional": false,
-            "field": "field1",
-            "description": "<p>This is Field 1.</p> "
-          },
-          {
-            "group": "Parameter",
-            "optional": false,
-            "field": "field2",
-            "description": "<p>This is Field 2.</p> "
-          }
-        ]
-      }
-    },
-    "filename": "src/structure.js",
-    "groupTitle": "Structure",
-    "sampleRequest": [
-      {
-        "url": "https://api.github.com/v1/test/structure"
-      }
-    ]
-  },
-  {
-    "type": "post",
-    "url": "/test/success",
-    "title": "Multiple Success Structures",
-    "name": "PostSuccess",
-    "group": "Success",
-    "version": "0.1.0",
-    "description": "<p>Use of multiple SuccessStructures.</p> ",
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "optional": false,
-            "field": "success3",
-            "description": "<p>This is Success 3 (local).</p> "
-          },
-          {
-            "group": "Success 200",
+            "group": "Error 4xx",
             "optional": false,
             "field": "success1",
             "description": "<p>This is Success 1.</p> "
           },
           {
-            "group": "Success 200",
+            "group": "Error 4xx",
             "optional": false,
             "field": "success2",
             "description": "<p>This is Success 2.</p> "
@@ -1777,11 +1434,62 @@ define({ "api": [
         ]
       }
     },
-    "filename": "src/success_structure.js",
-    "groupTitle": "Success",
+    "filename": "src/api_param.js",
+    "groupTitle": "Param",
     "sampleRequest": [
       {
-        "url": "https://api.github.com/v1/test/success"
+        "url": "https://api.github.com/v1/param/:id"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/permission/",
+    "title": "Permission",
+    "name": "GetPermission",
+    "group": "Permission",
+    "version": "0.8.0",
+    "description": "<p>@apiPermission test.</p> ",
+    "permission": [
+      {
+        "name": "permission_admin",
+        "title": "Admin access.",
+        "description": "<p>Some description.</p> "
+      }
+    ],
+    "filename": "src/api_permission.js",
+    "groupTitle": "Permission",
+    "sampleRequest": [
+      {
+        "url": "https://api.github.com/v1/permission/"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/permission/",
+    "title": "Permission",
+    "name": "GetPermission",
+    "group": "Permission",
+    "version": "0.8.0",
+    "description": "<p>@apiPermission test.</p> ",
+    "permission": [
+      {
+        "name": "permission_admin",
+        "title": "Admin access.",
+        "description": "<p>Some description.</p> "
+      },
+      {
+        "name": "permission_user",
+        "title": "User access.",
+        "description": ""
+      }
+    ],
+    "filename": "src/api_permission.js",
+    "groupTitle": "Permission",
+    "sampleRequest": [
+      {
+        "url": "https://api.github.com/v1/permission/"
       }
     ]
   },
