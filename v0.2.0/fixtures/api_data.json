@@ -244,7 +244,7 @@
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param1",
             "description": "<p>No Group, automatically set Group to &quot;Parameter&quot;</p> "
@@ -253,14 +253,14 @@
         "Replace \"login\" with this text.": [
           {
             "group": "login",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param2",
             "description": "<p>Group &quot;login&quot;</p> "
           },
           {
             "group": "login",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param3",
             "defaultValue": "Default Value",
@@ -274,14 +274,14 @@
         "201 - Everything ok, replace \"201\" with this text.": [
           {
             "group": "201",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "success2",
             "description": "<p>Group &quot;201&quot;</p> "
           },
           {
             "group": "201",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "success3",
             "defaultValue": "Default Value",
@@ -291,7 +291,7 @@
         "Success 200": [
           {
             "group": "Success 200",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "success1",
             "description": "<p>No Group, automatically set &quot;Success 200&quot;</p> "
@@ -304,7 +304,7 @@
         "400": [
           {
             "group": "400",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "error2",
             "description": "<p>Undefined Group &quot;400&quot;</p> "
@@ -313,7 +313,7 @@
         "401 - Oh oh, replace \"401\" with this text": [
           {
             "group": "401",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "error3",
             "description": "<p>Group &quot;401&quot;</p> "
@@ -322,7 +322,7 @@
         "Error 4xx": [
           {
             "group": "Error 4xx",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "error1",
             "description": "<p>No Group automatically set &quot;Error 4xx&quot;</p> "
@@ -930,7 +930,7 @@
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param1",
             "description": "<p>This is a markdown <strong>apiParam</strong></p> <p>Separate line.</p> "
@@ -1045,21 +1045,21 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param9",
             "description": "<p>Type, parameter and description.</p> "
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param10",
             "description": ""
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param11",
             "defaultValue": "Default Value",
@@ -1067,7 +1067,7 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param12",
             "defaultValue": "Default Value",
@@ -1075,21 +1075,21 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": true,
             "field": "param13",
             "description": "<p>Type, optional parameter and description.</p> "
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": true,
             "field": "param14",
             "description": ""
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": true,
             "field": "param15",
             "defaultValue": "Default Value",
@@ -1097,7 +1097,7 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": true,
             "field": "param26",
             "defaultValue": "Default Value",
@@ -1105,7 +1105,7 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "size": "4,8",
             "optional": false,
             "field": "param17",
@@ -1113,7 +1113,7 @@
           },
           {
             "group": "Parameter",
-            "type": "Number",
+            "type": "<p>Number</p> ",
             "size": "1-3",
             "optional": false,
             "field": "param18",
@@ -1121,7 +1121,7 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "size": "4,8",
             "optional": false,
             "field": "param19",
@@ -1130,7 +1130,7 @@
           },
           {
             "group": "Parameter",
-            "type": "Number",
+            "type": "<p>Number</p> ",
             "size": "1-3",
             "optional": false,
             "field": "param20",
@@ -1139,7 +1139,7 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "allowedValues": [
               "\"value 1\""
             ],
@@ -1149,7 +1149,7 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "allowedValues": [
               "\"value 1\"",
               "\"value 2\""
@@ -1160,7 +1160,7 @@
           },
           {
             "group": "Parameter",
-            "type": "Number",
+            "type": "<p>Number</p> ",
             "allowedValues": [
               "4711"
             ],
@@ -1170,7 +1170,7 @@
           },
           {
             "group": "Parameter",
-            "type": "Number",
+            "type": "<p>Number</p> ",
             "allowedValues": [
               "4711",
               "4712"
@@ -1181,7 +1181,7 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "size": "1,10",
             "allowedValues": [
               "\"value 1\""
@@ -1192,7 +1192,7 @@
           },
           {
             "group": "Parameter",
-            "type": "Number",
+            "type": "<p>Number</p> ",
             "size": "1-9999",
             "allowedValues": [
               "4711"
@@ -1203,7 +1203,7 @@
           },
           {
             "group": "Parameter",
-            "type": "Number",
+            "type": "<p>Number</p> ",
             "size": "1-9999",
             "allowedValues": [
               "4711",
@@ -1212,6 +1212,13 @@
             "optional": false,
             "field": "param28",
             "description": "<p>Type, size, parameter and allowed list of values.</p> "
+          },
+          {
+            "group": "Parameter",
+            "type": "<p><a href=\"http://en.wikipedia.org/wiki/Data_type\">Custom</a></p> ",
+            "optional": false,
+            "field": "param29",
+            "description": "<p>Type with markdown link.</p> "
           }
         ]
       }
@@ -1237,28 +1244,28 @@
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param0",
             "description": "<p>This param is removed in 0.1.1.</p> "
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param1",
             "description": "<p>This is an old text.</p> "
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param2",
             "description": ""
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param3",
             "defaultValue": "Default Value",
@@ -1266,7 +1273,7 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "param4",
             "defaultValue": "Default Value",
@@ -1326,21 +1333,21 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": true,
             "field": "param13",
             "description": "<p>Optional Parameter with type and description.</p> "
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": true,
             "field": "param14",
             "description": ""
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": true,
             "field": "param15",
             "defaultValue": "Default Value",
@@ -1348,7 +1355,7 @@
           },
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": true,
             "field": "param16",
             "defaultValue": "Default Value",
@@ -1385,7 +1392,7 @@
         "Parameter": [
           {
             "group": "Parameter",
-            "type": "String",
+            "type": "<p>String</p> ",
             "optional": false,
             "field": "name",
             "description": "<p>Fullname.</p> "

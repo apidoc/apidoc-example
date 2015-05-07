@@ -39,6 +39,8 @@
  * @apiParam {String{1,10}="value 1", "value 2"} param26 Type, size, parameter and allowed list of string values.
  * @apiParam {Number{1-9999}=4711}               param27 Type, size, parameter and allowed value.
  * @apiParam {Number{1-9999}=4711,4712}          param28 Type, size, parameter and allowed list of values.
+ *
+ * @apiParam {[Custom](http://en.wikipedia.org/wiki/Data_type)} param29 Type with markdown link.
  */
 
 /**
