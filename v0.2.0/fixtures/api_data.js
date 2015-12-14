@@ -883,7 +883,7 @@ define({ "api": [
     "examples": [
       {
         "title": "Test for indented comment.",
-        "content": "This is example line 2.\nThis is example line 3.\n    Line 4 indented (with tab at beginning).\n    Line 5 indented.\nThis is example line 6.",
+        "content": "This is example line 2.\nThis is example line 3.\n\t    Line 4 indented (with tab at beginning).\n    Line 5 indented.\nThis is example line 6.",
         "type": "json"
       }
     ],
@@ -905,7 +905,7 @@ define({ "api": [
     "examples": [
       {
         "title": "Test for indented comment.",
-        "content": "This is example line 2.\nThis is example line 3.\n    Line 4 indented (with tab at beginning).\n    Line 5 indented.\nThis is example line 6.",
+        "content": "This is example line 2.\nThis is example line 3.\n\t    Line 4 indented (with tab at beginning).\n    Line 5 indented.\nThis is example line 6.",
         "type": "json"
       }
     ],
