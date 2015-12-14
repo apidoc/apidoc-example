@@ -1,6 +1,6 @@
 {
   "name": "apidoc-example",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Examples and test fixtures for apidoc.",
   "author": "Peter Rottmann <rottmann@inveris.de>",
   "license": {
