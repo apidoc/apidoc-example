@@ -13,18 +13,6 @@ define({ "api": [
           {
             "group": "Parameter",
             "optional": false,
-            "field": "field3",
-            "description": "<p>This is Field 3 (local).</p>"
-          },
-          {
-            "group": "Parameter",
-            "optional": false,
-            "field": "field1",
-            "description": "<p>This is Field 1.</p>"
-          },
-          {
-            "group": "Parameter",
-            "optional": false,
             "field": "field2",
             "description": "<p>This is Field 2.</p>"
           }
@@ -1521,7 +1509,7 @@ define({ "api": [
     "url": "/indent/trim/multi/tabs",
     "title": "Trim multi line (tabs)",
     "group": "indent",
-    "description": "<p>Text line 1 (Begin: 3xTab (2 removed)). Text line 2 (Begin: 2x Tab (2 removed), End: 1xTab).</p>",
+    "description": "<p>Text line 1 (Begin: 3xTab (2 removed)). \t\tText line 2 (Begin: 2x Tab (2 removed), End: 1xTab).</p>",
     "version": "0.0.0",
     "filename": "src/indent.js",
     "groupTitle": "Indent",
