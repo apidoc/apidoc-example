@@ -13,6 +13,18 @@ define({ "api": [
           {
             "group": "Parameter",
             "optional": false,
+            "field": "field3",
+            "description": "<p>This is Field 3 (local).</p>"
+          },
+          {
+            "group": "Parameter",
+            "optional": false,
+            "field": "field1",
+            "description": "<p>This is Field 1.</p>"
+          },
+          {
+            "group": "Parameter",
+            "optional": false,
             "field": "field2",
             "description": "<p>This is Field 2.</p>"
           }
