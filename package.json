@@ -1,12 +1,9 @@
 {
   "name": "apidoc-example",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Examples and test fixtures for apidoc.",
   "author": "Peter Rottmann <rottmann@inveris.de>",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/apidoc/apidoc-example/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "main": "./index.js",
   "homepage": "http://apidocjs.com",
   "repository": {
