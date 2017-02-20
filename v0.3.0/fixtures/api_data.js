@@ -1581,7 +1581,7 @@ define({ "api": [
     "url": "/indent/trim/multi/tabs",
     "title": "Trim multi line (tabs)",
     "group": "indent",
-    "description": "<p>Text line 1 (Begin: 3xTab (2 removed)). \t\tText line 2 (Begin: 2x Tab (2 removed), End: 1xTab).</p>",
+    "description": "<p>Text line 1 (Begin: 3xTab (2 removed)). Text line 2 (Begin: 2x Tab (2 removed), End: 1xTab).</p>",
     "version": "0.0.0",
     "filename": "src/indent.js",
     "groupTitle": "Indent",
